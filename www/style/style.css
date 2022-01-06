@@ -1,0 +1,25 @@
+:root{
+    --imageWidth: 50px;
+}
+
+.divHeader{
+    border: solid red 2px;
+    float: left;
+    display: inline;
+    width: 100%;
+}
+
+.imageHeaderLogo{
+    height: var(--imageWidth);
+    width: auto;
+    margin: 5px;
+    /* border: solid red 2px; */
+    float:left;
+}
+
+.pHeaderText{
+    font-size: 200%;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border: solid red 2px; */
+    transform: translate(0,-50%);
+}
