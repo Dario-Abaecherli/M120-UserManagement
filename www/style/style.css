@@ -1,25 +1,28 @@
 :root{
-    --imageWidth: 50px;
+    --imageHeight: 50px;
 }
 
 .divHeader{
-    border: solid red 2px;
     float: left;
     display: inline;
     width: 100%;
+    /* border: solid red 2px; */
 }
 
 .imageHeaderLogo{
-    height: var(--imageWidth);
+    display: inline-block;
+    vertical-align: middle;
+    height: var(--imageHeight);
     width: auto;
     margin: 5px;
     /* border: solid red 2px; */
-    float:left;
+
 }
 
 .pHeaderText{
+    display: inline-block;
     font-size: 200%;
     font-family: Arial, Helvetica, sans-serif;
+    vertical-align: middle;
     /* border: solid red 2px; */
-    transform: translate(0,-50%);
 }
