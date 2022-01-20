@@ -11,6 +11,7 @@
     display: inline;
     width: 100%;
     text-align: center;
+    border-bottom: solid black 1px;
 }
 
 .imageHeaderLogo{
@@ -28,6 +29,7 @@
     font-family: Arial, Helvetica, sans-serif;
     vertical-align: middle;
 }
+
 
 /* Main Content */
 .table
@@ -71,6 +73,34 @@
     padding: 10px;
 }
 
+.editTable .divForm
+{
+    margin-top: 10px;
+}
+
+.editTable .labelItem
+{
+    display: inline-block;
+    width: 150px;
+}
+
+.divForm .inputItem
+{
+    margin-left: 10px;
+    text-align: center;
+}
+
+.editTable .imgProfile
+{
+    border: solid black 1px;
+    vertical-align: bottom;
+}
+
+.editTable .pHeader
+{
+    font-weight: bold;
+}
+
 
 /* Footer */
 .divFooter
@@ -88,8 +118,17 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
 }
 
+.footerButton
+{
+    padding: 15px 32px;
+    margin-right: 20px;
+}
+
+
+/* General */
 .button
 {
     background-color: #ffffff;
@@ -101,11 +140,4 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-}
-
-.footerButton
-{
-    padding: 15px 32px;
-    margin-right: 20px;
-
 }

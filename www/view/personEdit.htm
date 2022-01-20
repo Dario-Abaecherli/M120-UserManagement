@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css">
-    <title>Main Page</title>
+    <title>Edit Page</title>
 </head>
 <body>
     <div class="divPage">
@@ -14,10 +14,78 @@
             <p class="pHeaderText">Personenverwaltung by AD - Hauptseite</p>
         </div>
         <div class="divMainContent">
-            
+            <table class="table editTable">
+                <tr class="tableRow">
+                    <td>
+                        <p class="pHeader">Persönliche Daten</p>
+                        <div class="divForm">
+                            <label for="personId" class="labelItem">Personennummer</label>
+                            <input type="text" name="personId" class="inputItem" value="001" disabled>
+                        </div>
+                        <div class="divForm">
+                            <label for="personVorname" class="labelItem">Vorname</label>
+                            <input type="text" name="personVorname" class="inputItem" value="Heinrich">
+                        </div>
+                        <div class="divForm">
+                            <label for="personNachname" class="labelItem">Nachname</label>
+                            <input type="text" name="personNachname" class="inputItem" value="Grauer">
+                        </div>
+                        <div class="divForm">
+                            <label for="personBirthDate" class="labelItem">Geb. Datum</label>
+                            <input type="text" name="personGebDatum" class="inputItem" value="23.12.1958">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="../images/profile-picture.png" alt="Image of Person" class="imgProfile" height="150px" width="150px">
+                        </div>
+                    </td>
+                </tr>
+                <tr class="tableRow">
+                    <td>
+                        <p class="pHeader">Adresse</p>
+                        <div class="divForm">
+                            <label for="personStreet" class="labelItem">Strasse</label>
+                            <input type="text" name="personStreet" class="inputItem" value="Zufallsweg">
+                        </div>
+                        <div class="divForm">
+                            <label for="personStreetNr" class="labelItem">Hausnummer</label>
+                            <input type="text" name="personStreetNr" class="inputItem" value="5">
+                        </div>
+                        <div class="divForm">
+                            <label for="personPlace" class="labelItem">Ort</label>
+                            <input type="text" name="personPlace" class="inputItem" value="Erdingen">
+                        </div>
+                        <div class="divForm">
+                            <label for="personPLZ" class="labelItem">PLZ</label>
+                            <input type="text" name="personPLZ" class="inputItem" value="9004">
+                        </div>
+                    </td>
+                    <td>
+                        <p class="pHeader">Job</p>
+                        <div class="divForm">
+                            <label for="personJob" class="labelItem">Tätigkeit</label>
+                            <input type="text" name="personJob" class="inputItem" value="Leiter">
+                        </div>
+                        <div class="divForm">
+                            <label for="personSalary" class="labelItem">Salär</label>
+                            <input type="text" name="personSalary" class="inputItem" value="5000">
+                        </div>
+                        <div class="divForm">
+                            <label for="personPercentage" class="labelItem">Stellenprozent</label>
+                            <input type="text" name="personPercentage" class="inputItem" value="90%">
+                        </div>
+                        <div class="divForm">
+                            <label for="personEntryDate" class="labelItem">Eintrittsjahr</label>
+                            <input type="text" name="personEntryDate" class="inputItem" value="2001">
+                        </div>
+                    </td>
+                </tr>
+            </table>
         </div>
         <div class="divFooter">
-            <a href="personEdit.htm" class="aFooterButton"><button class="button footerButton">Hinzufügen!</button>   </a>
+            <a href="mainPage.htm" class="aFooterButton"><button class="button footerButton">Abbrechen!</button></a>
+            <button class="button footerButton">Speichern!</button>
         </div>
     </div>
 </body>
