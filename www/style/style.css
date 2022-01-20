@@ -2,6 +2,7 @@
     --imageHeight: 50px;
     --containerWidth: 90%;
     --contentOffsetLeft: 5%;
+    --borderPixel: 2px
 }
 
 /* Header */
@@ -9,7 +10,7 @@
     float: left;
     display: inline;
     width: 100%;
-    /* border: solid red 2px; */
+    text-align: center;
 }
 
 .imageHeaderLogo{
@@ -18,7 +19,6 @@
     height: var(--imageHeight);
     width: auto;
     margin: 5px;
-    /* border: solid red 2px; */
 
 }
 
@@ -27,7 +27,6 @@
     font-size: 200%;
     font-family: Arial, Helvetica, sans-serif;
     vertical-align: middle;
-    /* border: solid red 2px; */
 }
 
 /* Main Content */
@@ -35,17 +34,41 @@
 {
     width: var(--containerWidth);
     margin-left: var(--contentOffsetLeft);
-    border: solid red 2px;
+    border-collapse: collapse;
 }
 
-tr
+.personTable
 {
-    border-bottom: solid black 1px;
+    border-collapse:separate;
+    border-spacing:0 15px;
 }
 
-td
+.tableDiv
 {
-    /* border: solid red 2px; */
+    background-color: rgb(221, 221, 221);
+    text-align: center;
+    font-weight: bold;
+    border-top: solid black var(--borderPixel);
+    border-bottom: solid black var(--borderPixel);
+}
+
+.tableRow .tableDiv:first-child
+{
+    border-left: solid black var(--borderPixel);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.tableRow .tableDiv:last-child
+{
+    border-right: solid black var(--borderPixel);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.tdButton
+{
+    width: 0px;
+    padding: 10px;
 }
 
 
@@ -67,11 +90,6 @@ td
     align-items: center;
 }
 
-.aFooterButton
-{
-    margin-right: 20px;
-}
-
 .button
 {
     background-color: #ffffff;
@@ -88,4 +106,6 @@ td
 .footerButton
 {
     padding: 15px 32px;
+    margin-right: 20px;
+
 }
