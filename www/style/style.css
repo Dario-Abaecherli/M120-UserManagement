@@ -1,7 +1,10 @@
 :root{
     --imageHeight: 50px;
+    --containerWidth: 90%;
+    --contentOffsetLeft: 5%;
 }
 
+/* Header */
 .divHeader{
     float: left;
     display: inline;
@@ -25,4 +28,64 @@
     font-family: Arial, Helvetica, sans-serif;
     vertical-align: middle;
     /* border: solid red 2px; */
+}
+
+/* Main Content */
+.table
+{
+    width: var(--containerWidth);
+    margin-left: var(--contentOffsetLeft);
+    border: solid red 2px;
+}
+
+tr
+{
+    border-bottom: solid black 1px;
+}
+
+td
+{
+    /* border: solid red 2px; */
+}
+
+
+/* Footer */
+.divFooter
+{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(209, 206, 206);
+    color: rgb(0, 0, 0);
+    border-top: solid rgb(0, 0, 0) 2px;
+    height: 10%;
+
+    /* Align text central right */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.aFooterButton
+{
+    margin-right: 20px;
+}
+
+.button
+{
+    background-color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    color: rgb(48, 48, 48);
+    border: solid black 1px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.footerButton
+{
+    padding: 15px 32px;
 }
